@@ -1,11 +1,11 @@
 import loginPage from '../../support/pages/login-page';
 const loginInput = require('../../fixtures/data.json')
 
-describe('Login saucedemo', () => {
+describe('Login tricentis', () => {
   const LoginPage = new loginPage()
   const uniqueSeed = Date.now().toString();
   const getUniqueId = () => Cypress._.uniqueId(uniqueSeed);
-  it('failed login empty form', () => {
+  it('C1 failed login empty form', () => {
     cy.visit('/')
     cy.get(LoginPage.login).click()
     cy.url().should('include', '/login')
@@ -15,7 +15,7 @@ describe('Login saucedemo', () => {
     cy.get('.validation-summary-errors > ul > li')
       .should('contain.text', 'No customer')
   })
-  it('failed login no found', () => {
+  it('C2 failed login no found', () => {
     const uniqueId = getUniqueId();
     //const faker = require("faker");5
     cy.visit('/')
@@ -29,7 +29,7 @@ describe('Login saucedemo', () => {
     cy.get('.validation-summary-errors > ul > li')
       .should('contain.text', 'No customer')
   })
-  it('success login', () => {
+  it('C3 success login', () => {
     cy.visit('/')
     cy.get(LoginPage.login).click()
     cy.url().should('include', '/login')
