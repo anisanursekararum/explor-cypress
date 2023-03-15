@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('input_email', (locator, data) => {
+    cy.get(locator).clear().type(data).should('exist')
+})

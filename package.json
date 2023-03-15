@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "npx cypress run --spec    'cypress/e2e/3-tricentis/login.cy.js'"
+
   },
   "author": "anisanursekararum",
   "license": "ISC",
