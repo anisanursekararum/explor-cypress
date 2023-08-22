@@ -19,7 +19,7 @@ module.exports = defineConfig({
   reporterOptions: {
     host: "https://anisanursekararum.testrail.io/",
     username: "anisanursekararum@gmail.com",
-    password: "5JbcMdhJk45zLqc85UOi-jPRBjtn1RDnhMcT7BMUE",
+    password: "0tlx7vmgZ02QqEXBKyX2-yRP638zgDoXlwUUY23h4",
     projectId: 1,
     runId: 1
   }
